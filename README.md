@@ -1,16 +1,16 @@
 This package can be used to send messages and photos to telegram bot.
-#Installation
+# Installation
 ```
 go get -u github.com/elvin-tacirzade/telegobot
 ```
-#Usage
+# Usage
 First we need to set the TELEGRAM_TOKEN and TELEGRAM_CHAT_ID environment variable.
 ```
 os.Setenv("TELEGRAM_TOKEN", "XXX")
 os.Setenv("TELEGRAM_CHAT_ID", "@XXX")
 ```
 There are SendMessage() and SendPhoto() functions in the package.
-###func SendMessage()
+### func SendMessage()
 ```
 package main
 
@@ -28,7 +28,7 @@ func main() {
 	fmt.Println(result)
 }
 ```
-###func SendPhoto()
+### func SendPhoto()
 ```
 package main
 
