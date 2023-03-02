@@ -1,4 +1,4 @@
-// Package telegobot allows to connect to telegram and send message and photo via bot
+// Package telegobot allows to connect to telegram and send messages and photos via bot
 package telegobot
 
 import (
@@ -12,7 +12,7 @@ type (
 	// Telegobot interface includes two functions. SendMessage and SendPhoto
 	Telegobot interface {
 		SendMessage(message string) error
-		SendPhoto(photo, caption, btnText, btnUrl string) error
+		SendPhoto(photoURL, caption, btnText, btnURL string) error
 	}
 
 	// telegobot struct stores TelegramToken and TelegramChatID
@@ -47,7 +47,7 @@ func Start(telegramToken, telegramChatID string) (Telegobot, error) {
 	}, nil
 }
 
-// SendMessage function sends message to telegram channel via bot
+// SendMessage function sends messages to telegram channel via bot
 func (t *telegobot) SendMessage(message string) error {
 	addr := getAddr(t.TelegramToken, "sendMessage")
 
@@ -68,7 +68,7 @@ func (t *telegobot) SendMessage(message string) error {
 	return nil
 }
 
-// SendPhoto function sends photo to telegram channel via bot
+// SendPhoto function sends photos to telegram channel via bot
 func (t *telegobot) SendPhoto(photoURL, caption, btnText, btnURL string) error {
 	addr := getAddr(t.TelegramToken, "sendPhoto")
 	replyMarkup := ""
