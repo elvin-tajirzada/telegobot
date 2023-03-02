@@ -1,5 +1,7 @@
 # Telegobot
 This package can be used to send messages and photos to telegram channel via bot.
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/elvin-tacirzade/telegobot.svg)](https://pkg.go.dev/github.com/elvin-tacirzade/telegobot)
 ## Installation
 ```
 go get -u github.com/elvin-tacirzade/telegobot
