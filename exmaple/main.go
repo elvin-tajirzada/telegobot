@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/elvin-tacirzade/telegobot"
+	"github.com/elvin-tajirzada/telegobot"
 	"log"
 )
 
